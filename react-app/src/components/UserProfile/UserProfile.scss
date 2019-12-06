@@ -1,0 +1,38 @@
+.user-profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .user-data-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 90px;
+
+        .avatar-icon {
+            width: 200px;
+            height: 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .user-data {
+            display: flex;
+            color: #fff;
+
+            .description {
+                margin-right: 20px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .value {
+                font-size: 16px;
+            }
+        }
+    }
+}

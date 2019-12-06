@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px;
+    background-color: #392161;
+
+    .sign-out, .settings {
+        cursor: pointer;
+        color: #fff;
+    }
+}
