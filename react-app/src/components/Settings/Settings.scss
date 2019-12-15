@@ -1,0 +1,34 @@
+.settings-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 60px;
+    background-color: white;
+    border-radius: 25px;
+
+    .user-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+
+        .description {
+            font-weight: bold;
+            font-size: 20px;
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
+        .value {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .button {
+        width: 50%;
+        align-self: center;
+    }
+}

@@ -12,9 +12,11 @@ const Login = () => {
 
 
     const login = useCallback(() => {
-        localStorage.setItem('authenticated', 'true');
-        console.log(email, password);
-        history.push('/home');
+        const users = localStorage.getItem('users');
+        if (JSON.parse(users || '[]').find(user => user.email === email && user.password === password)) {
+            localStorage.setItem('authenticated', 'true');
+            history.push('/home');
+        }
     }, [email, password, history]);
 
     return (
@@ -39,6 +41,7 @@ const Login = () => {
                     <div className="buttons-wrapper">
                         <Button variant="contained"
                                 color="primary"
+                                disabled={!password || !email}
                                 onClick={login}>
                             Sign In
                         </Button>

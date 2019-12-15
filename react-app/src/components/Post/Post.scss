@@ -1,0 +1,33 @@
+.post-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    min-height: 100px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #392161;
+            font-weight: bold;
+        }
+
+        .delete-icon {
+            color: #392161;
+            cursor: pointer;
+        }
+    }
+
+    .post-body {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
