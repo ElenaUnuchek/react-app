@@ -1,0 +1,13 @@
+.weather-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    .error {
+        color: red;
+    }
+}
+
+.MuiInput-input, .MuiButton-label {
+    color: #fff !important;
+}

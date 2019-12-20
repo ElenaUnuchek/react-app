@@ -9,6 +9,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Weather from "../Weather/Weather";
 
 const UserProfile = () => {
 
@@ -132,6 +133,7 @@ const UserProfile = () => {
                         </Button>
                     </DialogActions>
                 </Dialog>
+                <Weather/>
             </div>
         </div>
     )
